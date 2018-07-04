@@ -11,8 +11,14 @@ This a simple mouse tracking application implemented with Kalman filter.
 ## Usage
 
 ```shell
-python main.py
+python main.py  # run it to see the following demo
 ```
+
+<div align="center">
+<img src="assets/demo.gif" width = "400" height = "400" alt="Demo" align=center />
+</div>
+
+Press `Q` to quit the demo.
 
 ## References
 
