@@ -40,7 +40,7 @@ stateMatrix = np.zeros((4, 1), np.float32)  # [x, y, delta_x, delta_y]
 estimateCovariance = np.eye(stateMatrix.shape[0])
 transitionMatrix = np.array([[1, 0, 1, 0],[0, 1, 0, 1], [0, 0, 1, 0], [0, 0, 0, 1]], np.float32)
 processNoiseCov = np.array([[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]], np.float32) * 0.001
-measurementStateMatrix = np.eye(2)
+measurementStateMatrix = np.zeros((2, 1), np.float32)
 observationMatrix = np.array([[1,0,0,0],[0,1,0,0]],np.float32)
 measurementNoiseCov = np.array([[1,0],[0,1]], np.float32) * 1
 kalman = KalmanFilter(X=stateMatrix,
